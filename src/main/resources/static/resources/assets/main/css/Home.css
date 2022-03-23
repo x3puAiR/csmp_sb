@@ -1,0 +1,29 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 547px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  font-size: 1.5rem;
+  align-self: center;
+  margin: 70px auto 0;
+  padding: 27px 79px 28px 78px;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  align-self: center;
+  margin: 30px auto 0;
+  padding: 26px 96px 27px 95px;
+}
+
+.u-section-1 .u-btn-3 {
+  border-style: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 30px auto 115px;
+  padding: 27px 141px;
+}

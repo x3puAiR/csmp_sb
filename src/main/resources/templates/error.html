@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Error Occurred</title>
+    <link rel="stylesheet" th:href="@{/resources/assets/normalize.min.css}">
+    <link rel="stylesheet" th:href="@{/resources/assets/error/style.css}">
+
+</head>
+<body>
+<div class="full-screen">
+    <div class='container'>
+        <span class="error-num">5</span>
+        <div class='eye'></div>
+        <div class='eye'></div>
+
+        <p class="sub-text">Something went wrong. We're <span class="italic">looking</span> to see what happened.</p>
+        <a href="#" onclick="window.history.back()">Go back</a>
+    </div>
+</div>
+<!-- partial -->
+<script th:src="@{/resources/assets/jquery.min.js}"></script>
+<script th:src="@{/resources/assets/error/script.js}"></script>
+
+</body>
+</html>

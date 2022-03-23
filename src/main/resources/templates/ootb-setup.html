@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <title>First Use Setup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../resources/assets/ootb/css/style.css"
+          th:href="@{/resources/assets/ootb/css/style.css}">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="../resources/assets/ootb/lib/bootstrap/css/bootstrap.min.css"
+          th:href="@{/resources/assets/ootb/lib/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../resources/assets/ootb/lib/owlcarousel/assets/owl.carousel.min.css"
+          th:href="@{/resources/assets/ootb/lib/owlcarousel/assets/owl.carousel.min.css}" rel="stylesheet">
+    <link href="../resources/assets/ootb/lib/owlcarousel/assets/owl.theme.default.min.css"
+          th:href="@{/resources/assets/ootb/lib/owlcarousel/assets/owl.theme.default.min.css}" rel="stylesheet">
+    <link href="../resources/assets/ootb/lib/font-awesome/css/font-awesome.min.css"
+          th:href="@{/resources/assets/ootb/lib/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
+    <link href="../resources/assets/ootb/lib/animate/animate.min.css"
+          th:href="@{/resources/assets/ootb/lib/animate/animate.min.css}" rel="stylesheet">
+    <link href="../resources/assets/ootb/lib/modal-video/css/modal-video.min.css"
+          th:href="@{/resources/assets/ootb/lib/modal-video/css/modal-video.min.css}" rel="stylesheet">
+
+    <!--	  Table-->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../resources/assets/ootb/vendor/bootstrap/css/bootstrap.min.css"
+          th:href="@{/resources/assets/ootb/vendor/bootstrap/css/bootstrap.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../resources/assets/ootb/vendor/animate/animate.css"
+          th:href="@{/resources/assets/ootb/vendor/animate/animate.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../resources/assets/ootb/vendor/select2/select2.min.css"
+          th:href="@{/resources/assets/ootb/vendor/select2/select2.min.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="../resources/assets/ootb/vendor/perfect-scrollbar/perfect-scrollbar.css"
+          th:href="@{/resources/assets/ootb/vendor/perfect-scrollbar/perfect-scrollbar.css}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../resources/assets/ootb/css/util.css"
+          th:href="@{/resources/assets/ootb/css/util.css}">
+    <link rel="stylesheet" type="text/css" href="../resources/assets/ootb/css/main.css"
+          th:href="@{/resources/assets/ootb/css/main.css}">
+    <!--Table-->
+</head>
+
+
+<body>
+<!--	HEADER-->
+<a class="group" id="page-wrap" target="_blank" rel="external noopener">
+
+    <div id="inner-wrap">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" width=10% height="321.75" viewBox="0 0 960 214.5"
+             preserveAspectRatio="xMinYMid meet">
+            <defs>
+                <style>.waves > path {
+                    -webkit-animation: a 17390ms ease-in-out infinite alternate-reverse both;
+                    -moz-animation: a 17390ms ease-in-out infinite alternate-reverse both;
+                    -ms-animation: a 17390ms ease-in-out infinite alternate-reverse both;
+                    -o-animation: a 17390ms ease-in-out infinite alternate-reverse both;
+                    animation: a 17390ms ease-in-out infinite alternate-reverse both;
+                    -webkit-animation-timing-function: cubic-bezier(.25, 0, .75, 1);
+                    -moz-animation-timing-function: cubic-bezier(.25, 0, .75, 1);
+                    -ms-animation-timing-function: cubic-bezier(.25, 0, .75, 1);
+                    -o-animation-timing-function: cubic-bezier(.25, 0, .75, 1);
+                    animation-timing-function: cubic-bezier(.25, 0, .75, 1);
+                    -webkit-will-change: transform;
+                    -moz-will-change: transform;
+                    -ms-will-change: transform;
+                    -o-will-change: transform;
+                    will-change: transform
+                }
+
+                .waves > path:nth-of-type(1) {
+                    -webkit-animation-duration: 20580ms;
+                    -moz-animation-duration: 20580ms;
+                    -ms-animation-duration: 20580ms;
+                    -o-animation-duration: 20580ms;
+                    animation-duration: 20580ms
+                }
+
+                .waves > path:nth-of-type(2) {
+                    -webkit-animation-delay: -2690ms;
+                    -moz-animation-delay: -2690ms;
+                    -ms-animation-delay: -2690ms;
+                    -o-animation-delay: -2690ms;
+                    animation-delay: -2690ms;
+                    -webkit-animation-duration: 13580ms;
+                    -moz-animation-duration: 13580ms;
+                    -ms-animation-duration: 13580ms;
+                    -o-animation-duration: 13580ms;
+                    animation-duration: 13580ms
+                }
+
+                g > path:nth-of-type(1) {
+                    -webkit-animation-delay: -820ms;
+                    -moz-animation-delay: -820ms;
+                    -ms-animation-delay: -820ms;
+                    -o-animation-delay: -820ms;
+                    animation-delay: -820ms;
+                    -webkit-animation-duration: 10730ms;
+                    -moz-animation-duration: 10730ms;
+                    -ms-animation-duration: 10730ms;
+                    -o-animation-duration: 10730ms;
+                    animation-duration: 10730ms
+                }
+
+                .waves > path:nth-of-type(1), g > path:nth-of-type(2) {
+                    -webkit-animation-direction: alternate;
+                    -moz-animation-direction: alternate;
+                    -ms-animation-direction: alternate;
+                    -o-animation-direction: alternate;
+                    animation-direction: alternate
+                }
+
+                @-webkit-keyframes a {
+                    0% {
+                        -webkit-transform: translateX(-750px);
+                        transform: translateX(-750px)
+                    }
+                    100% {
+                        -webkit-transform: translateX(-20px);
+                        transform: translateX(-20px)
+                    }
+                }
+
+                @-moz-keyframes a {
+                    0% {
+                        -moz-transform: translateX(-750px);
+                        transform: translateX(-750px)
+                    }
+                    100% {
+                        -moz-transform: translateX(-20px);
+                        transform: translateX(-20px)
+                    }
+                }
+
+                @-ms-keyframes a {
+                    0% {
+                        -ms-transform: translateX(-750px);
+                        transform: translateX(-750px)
+                    }
+                    100% {
+                        -ms-transform: translateX(-20px);
+                        transform: translateX(-20px)
+                    }
+                }
+
+                @-o-keyframes a {
+                    0% {
+                        -o-transform: translateX(-750px);
+                        transform: translateX(-750px)
+                    }
+                    100% {
+                        -o-transform: translateX(-20px);
+                        transform: translateX(-20px)
+                    }
+                }
+
+                @keyframes a {
+                    0% {
+                        -webkit-transform: translateX(-750px);
+                        -moz-transform: translateX(-750px);
+                        -ms-transform: translateX(-750px);
+                        -o-transform: translateX(-750px);
+                        transform: translateX(-750px)
+                    }
+                    100% {
+                        -webkit-transform: translateX(-20px);
+                        -moz-transform: translateX(-20px);
+                        -ms-transform: translateX(-20px);
+                        -o-transform: translateX(-20px);
+                        transform: translateX(-20px)
+                    }
+                }</style>
+                <linearGradient id="a">
+                    <stop stop-color="#00A8DE"/>
+                    <stop offset="0.2" stop-color="#333391"/>
+                    <stop offset="0.4" stop-color="#E91388"/>
+                    <stop offset="0.6" stop-color="#EB2D2E"/>
+                </linearGradient>
+            </defs>
+            <path fill="url(#a)"
+                  d="M2662.6 1S2532 41.2 2435 40.2c-19.6-.2-37.3-1.3-53.5-2.8 0 0-421.3-59.4-541-28.6-119.8 30.6-206.2 75.7-391 73.3-198.8-2-225.3-15-370.2-50-145-35-218 37-373.3 36-19.6 0-37.5-1-53.7-3 0 0-282.7-36-373.4-38C139 26 75 46-1 46v106c17-1.4 20-2.3 37.6-1.2 130.6 8.4 210 56.3 287 62.4 77 6 262-25 329.3-23.6 67 1.4 107 22.6 193 23.4 155 1.5 249-71 380-62.5 130 8.5 209 56.3 287 62.5 77 6 126-18 188-18 61.4 0 247-38 307.4-46 159.3-20 281.2 29 348.4 30 67 2 132.2 6 217.4 7 39.3 0 87-11 87-11V1z"/>
+        </svg>
+        <div class="text-header" style=" text-align:center; font-size: 69pt; font-family: sans-serif">
+            Initialize Your Data
+        </div>
+        <h4 th:align="center">Firstly, you should take on all your inventory data into our system. Let's get
+            started!</h4>
+    </div>
+</a>
+
+<!--	CONTENT-->
+<section id="table" class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="btn-start">
+                <a href="#table1" class="btn-get-started scrollto">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <form action="submitOotbData" method="post">
+        <div class="limiter" id="table1">
+            <div class="container-table100">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section"><strong>Step 1 - Parts Data</strong></h2>
+                </div>
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+
+                            <table>
+                                <thead>
+                                <tr class="row100 head">
+                                    <th class="cell100 column1">#</th>
+                                    <th class="cell100 column2">SkuID</th>
+                                    <th class="cell100 column3">Name</th>
+                                    <th class="cell100 column4">Amount</th>
+                                    <th class="cell100 column5">Price</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">1</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid1"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name1"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount1"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price1"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">2</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid2"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name2"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount2"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price2"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">3</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid3"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name3"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount3"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price3"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">4</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid4"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name4"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount4"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price4"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">5</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid5"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name5"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount5"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price5"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">6</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid6"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name6"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount6"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price6"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">7</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid7"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name7"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount7"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price7"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">8</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid8"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name8"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount8"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price8"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">9</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid9"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name9"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount9"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price9"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">10</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid10"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name10"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount10"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price10"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">11</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid11"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name11"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount11"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price11"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid12"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name12"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount12"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price12"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">13</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid13"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name13"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount13"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price13"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">14</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid14"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name14"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount14"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price14"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">15</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid15"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name15"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount15"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price15"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">16</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid16"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name16"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount16"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price16"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">17</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid17"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name17"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount17"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price17"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">18</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid18"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name18"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount18"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price18"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">19</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid19"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name19"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount19"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price19"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">20</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid20"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name20"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount20"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price20"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">21</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid21"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name21"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount21"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price21"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">22</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid22"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name22"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount22"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price22"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">23</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid23"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name23"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount23"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price23"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">24</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid24"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name24"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount24"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price24"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">25</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid25"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name25"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount25"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price25"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">26</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid26"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name26"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount26"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price26"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">27</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid27"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name27"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount27"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price27"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">28</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid28"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name28"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount28"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price28"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">29</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid29"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name29"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount29"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price29"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">30</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid30"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name30"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount30"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price30"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-next">
+                            <div>
+                                <a href="#table2" class="btn-get-started scrollto">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="limiter" id="table2">
+            <div class="container-table100">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section"><strong>Step 2 - Computers Data</strong></h2>
+                </div>
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                <tr class="row100 head">
+                                    <th class="cell100 column1">#</th>
+                                    <th class="cell100 column2">SkuID</th>
+                                    <th class="cell100 column3">Name</th>
+                                    <th class="cell100 column4">Amount</th>
+                                    <th class="cell100 column5">Price</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">1</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid31"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name31"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount31"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price31"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">2</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid32"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name32"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount32"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price32"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">3</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid33"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name33"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount33"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price33"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">4</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid34"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name34"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount34"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price34"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">5</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid35"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name35"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount35"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price35"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">6</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid36"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name36"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount36"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price36"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">7</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid37"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name37"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount37"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price37"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">8</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid38"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name38"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount38"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price38"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">9</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid39"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name39"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount39"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price39"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">10</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid40"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name40"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount40"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price40"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">11</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid41"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name41"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount41"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price41"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid42"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name42"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount42"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price42"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">13</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid43"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name43"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount43"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price43"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">14</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid44"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name44"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount44"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price44"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">15</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid45"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name45"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount45"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price45"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">16</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid46"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name46"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount46"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price46"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">17</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid47"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name47"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount47"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price47"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">18</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid48"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name48"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount48"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price48"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">19</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid49"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name49"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount49"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price49"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">20</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid50"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name50"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount50"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price50"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">21</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid51"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name51"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount51"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price51"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">22</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid52"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name52"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount52"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price52"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">23</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid53"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name53"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount53"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price53"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">24</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid54"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name54"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount54"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price54"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">25</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid55"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name55"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount55"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price55"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">26</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid56"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name56"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount56"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price56"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">27</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid57"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name57"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount57"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price57"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">28</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid58"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name58"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount58"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price58"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">29</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid59"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name59"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount59"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price59"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">30</td>
+                                    <td class="cell100 column2c"><input type="text" name="skuid60"
+                                                                        oninput="value=value.replace(/[^\d]/g,'')"
+                                                                        maxlength="6"></td>
+                                    <td class="cell100 column3"><input type="text" name="name60"></td>
+                                    <td class="cell100 column4"><input type="text" name="amount60"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/[^\d]/g,'')">
+                                    </td>
+                                    <td class="cell100 column5"><input type="text" name="price60"
+                                                                       onkeyup="value=value.replace(/^0{1,}/g,'').replace(/^\D*(\d*(?:\.\d{0,2})?).*$/g, '$1')">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-next">
+                            <div>
+                                <a href="#setpass" class="btn-get-started scrollto">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="half" id="paw">
+            <div class="contents order-2 order-md-1">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <div class="form-block" id="setpass">
+                                <div class="text-center mb-5">
+                                    <h2><strong>Step 3 - Setup Password</strong></h2>
+                                </div>
+                                <!--                        <form action="#" method="post">-->
+                                <div class="form-group first">
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" class="form-control" placeholder="Your Password"
+                                           id="password"
+                                           name="password"
+                                           required>
+                                </div>
+                                <div class="form-group last mb-3">
+                                    <label for="confirm_password"><b>Confirm Password</b></label>
+                                    <input type="password" class="form-control" placeholder="Confirm Your Password"
+                                           id="confirm_password" name="confirm_password" required>
+                                </div>
+                                <br>
+                                <div class="btn-next">
+                                    <div>
+                                        <button type="submit" class="btn-get-started">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--===============================================================================================-->
+<script src="../resources/assets/ootb/vendor/jquery/jquery-3.2.1.min.js"
+        th:src="@{/resources/assets/ootb/vendor/jquery/jquery-3.2.1.min.js}"></script>
+<!--===============================================================================================-->
+<script src="../resources/assets/ootb/vendor/bootstrap/js/popper.js"
+        th:src="@{/resources/assets/ootb/vendor/bootstrap/js/popper.js}"></script>
+<script src="../resources/assets/ootb/vendor/bootstrap/js/bootstrap.min.js"
+        th:src="@{/resources/assets/ootb/vendor/bootstrap/js/bootstrap.min.js}"></script>
+<!--===============================================================================================-->
+<script src="../resources/assets/ootb/vendor/select2/select2.min.js"
+        th:src="@{/resources/assets/ootb/vendor/select2/select2.min.js}"></script>
+<!--===============================================================================================-->
+<script src="../resources/assets/ootb/vendor/perfect-scrollbar/perfect-scrollbar.min.js"
+        th:src="@{/resources/assets/ootb/vendor/perfect-scrollbar/perfect-scrollbar.min.js}"></script>
+<script>
+    $('.js-pscroll').each(function () {
+        var ps = new PerfectScrollbar(this);
+
+        $(window).on('resize', function () {
+            ps.update();
+        })
+    });
+
+</script>
+<!--===============================================================================================-->
+<!-- JavaScript Libraries -->
+<script src="../resources/assets/ootb/lib/jquery/jquery.min.js"
+        th:src="@{/resources/assets/ootb/lib/jquery/jquery.min.js}"></script>
+<script src="../resources/assets/ootb/lib/jquery/jquery-migrate.min.js"
+        th:src="@{/resources/assets/ootb/lib/jquery/jquery-migrate.min.js}"></script>
+<script src="../resources/assets/ootb/lib/bootstrap/js/bootstrap.bundle.min.js"
+        th:src="@{/resources/assets/ootb/lib/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script src="../resources/assets/ootb/lib/superfish/hoverIntent.js"
+        th:src="@{/resources/assets/ootb/lib/superfish/hoverIntent.js}"></script>
+<script src="../resources/assets/ootb/lib/superfish/superfish.min.js"
+        th:src="@{/resources/assets/ootb/lib/superfish/superfish.min.js}"></script>
+<script src="../resources/assets/ootb/lib/easing/easing.min.js"
+        th:src="@{/resources/assets/ootb/lib/easing/easing.min.js}"></script>
+<script src="../resources/assets/ootb/lib/modal-video/js/modal-video.js"
+        th:src="@{/resources/assets/ootb/lib/modal-video/js/modal-video.js}"></script>
+<script src="../resources/assets/ootb/lib/owlcarousel/owl.carousel.min.js"
+        th:src="@{/resources/assets/ootb/lib/owlcarousel/owl.carousel.min.js}"></script>
+<script src="../resources/assets/ootb/lib/wow/wow.min.js"
+        th:src="@{/resources/assets/ootb/lib/wow/wow.min.js}"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../resources/assets/ootb/js/main.js" th:src="@{/resources/assets/ootb/js/main.js}"></script>
+<script src="../resources/assets/ootb/js/paw.js" th:src="@{/resources/assets/ootb/js/paw.js}"></script>
+
+</body>
+</html>
+
