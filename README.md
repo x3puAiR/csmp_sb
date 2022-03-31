@@ -3,6 +3,16 @@ This is a CSMP Project with Spring Boot.
 
 Computer Store Management Platform - But with Spring Boot redeveloped.
 
+Features:
+ - Working as a Computer Store Repository Management System
+ - Initial setup with data
+ - Fetch all items
+ - Add new items
+ - Change item's price, refill item to increase amount
+ - Check weekly/monthly/yeayly report
+ - Reset database
+ - Change verification password
+
 How to use this project?
 
 ------------------------------------------------
